@@ -1,0 +1,14 @@
+# Normalise line endings so the repo stores LF regardless of who commits.
+# Without this, Windows checkouts write CRLF back and every file looks
+# modified to the next person who touches it.
+* text=auto eol=lf
+
+# Binary assets must never be normalised.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
